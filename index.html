@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6a531" />
+  <title>SAFE-ED GUIDE | 창원사업장</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="appShell">
+    <aside id="drawer" aria-label="목차">
+      <div class="brandBlock">
+        <div class="brandMark">S</div>
+        <div>
+          <strong>SAFE-ED GUIDE</strong>
+          <span>협력업체 관리감독자</span>
+        </div>
+      </div>
+      <div class="searchBox">
+        <input id="searchInput" type="search" placeholder="검색: LOTO, 지게차, TBM..." autocomplete="off" />
+      </div>
+      <nav id="toc"></nav>
+    </aside>
+
+    <main>
+      <header class="topBar">
+        <button id="menuBtn" aria-label="목차 열기">☰</button>
+        <div>
+          <h1 id="screenTitle">SAFE-ED GUIDE</h1>
+          <p id="screenSub">창원사업장 안전보건 가이드</p>
+        </div>
+        <button id="installBtn" hidden>설치</button>
+      </header>
+
+      <section class="hero" id="homeView">
+        <div class="heroCard">
+          <div class="eyebrow">B·S·S 학습자료</div>
+          <h2>협력업체 관리감독자<br/>안전보건 앱북</h2>
+          <p>원본 PDF의 내용을 수정하지 않고 페이지 이미지를 그대로 표시하는 URL 배포용 PWA 시안입니다.</p>
+          <button id="startBtn">시작하기</button>
+        </div>
+        <div class="quickGrid" id="quickGrid"></div>
+      </section>
+
+      <section class="reader" id="readerView" hidden>
+        <div class="readerToolbar">
+          <button id="prevBtn">‹ 이전</button>
+          <span id="pageLabel">1 / 73</span>
+          <button id="nextBtn">다음 ›</button>
+        </div>
+        <div class="pageFrame">
+          <img id="pageImage" src="public/pages/page-01.png" alt="PDF page 1" />
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="drawerBackdrop"></div>
+  <script src="app.js"></script>
+</body>
+</html>
