@@ -1,9 +1,9 @@
 {
   "name": "safe-ed-guide-pwa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "echo 'static site - no build required'",
-    "start": "npx serve ."
-  }
+    "build": "rm -rf dist && mkdir -p dist && cp -R index.html app.js styles.css manifest.webmanifest service-worker.js public icons dist/"
+  },
+  "devDependencies": {}
 }
