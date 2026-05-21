@@ -1,0 +1,9 @@
+{
+  "name": "safe-ed-guide-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'static site - no build required'",
+    "start": "npx serve ."
+  }
+}
